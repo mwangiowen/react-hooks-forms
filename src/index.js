@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from './components/Form'
-
+import Form from './components/Form';
+import ParentComponent from './components/parent';
+import DisplayData from './components/display';
 ReactDOM.render(
-  <Form />,
+  <div>
+    <Form />
+    <ParentComponent /> 
+    <DisplayData />
+  </div>,
   document.getElementById('root')
 );
